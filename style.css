@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #35424a;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        /* Navigation */
+        nav {
+            background-color: #e8491d;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav ul li a:hover {
+            color: #f4f4f4;
+            text-decoration: underline;
+        }
+        
+        /* Main Content */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        section {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #e8491d;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #35424a;
+            padding-bottom: 5px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #35424a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My First Styled Page</h1>
+        <p>Learning CSS3 Basics</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>About This Page</h2>
+            <p>This is my first attempt at styling a webpage with CSS3. I'm learning how to use selectors, properties, and values to create visually appealing web pages.</p>
+            <p>CSS3 offers many exciting features like transitions, animations, and responsive design capabilities.</p>
+        </section>
+        
+        <section>
+            <h2>What I've Learned</h2>
+            <p>So far, I've learned about:</p>
+            <ul>
+                <li>Basic CSS selectors</li>
+                <li>Styling text and backgrounds</li>
+                <li>The box model (margin, padding, border)</li>
+                <li>Positioning elements</li>
+                <li>Basic responsive design techniques</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p> My First Styled Page. All rights reserved.</p>
+    </footer>
+</body>
+</html>
